@@ -9,14 +9,17 @@
         </div>
         <div class="menuatas">
             <?php 
-                if (has_nav_menu('menuku')) {
+                
+                if (has_nav_menu('sidebar_menu')) { //Tidak Boleh Di Rubah
                     wp_nav_menu(array(
-                        'theme_location' => 'menuku',
+                        'theme_location' => 'sidebar_menu', //Tidak Boleh Di Rubah
                         'container' => 'div',
-                        'container_class' => 'sidebar-menu-container',
-                        'menu_class' => 'sidebar-menu'
+                        'container_class' => 'menuku',
+                        'menu_class' => 'isi-menu'
                     ));
                 }
+            
+                
 
             ?>
         </div>
@@ -52,7 +55,6 @@
         <div class="widget">
         <?php if(is_active_sidebar('kanan')){
             dynamic_sidebar('kanan');
-            
         }
         ?>
         </div>
@@ -66,5 +68,4 @@
 
 
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

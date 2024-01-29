@@ -20,10 +20,24 @@ body{
 }
 
 .menuatas{
-    background-color: red;
-    height: 100px;
 
 }
+
+.menuatas ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menuatas ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.menuatas ul li a:hover{
+    color: rgb(255, 0, 0);
+}
+
+
 
 .foto{
     height: 200px;

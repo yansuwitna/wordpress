@@ -31,8 +31,9 @@ add_action('widgets_init', 'kanan');
 
 //Untuk Menampilkan Menu
 function menuku() {
-    register_nav_menu('sidebar_menu', 'Tampilkan Di Menu');
+    register_nav_menu('sidebar_menu', 'Sidebar Menu');
 }
 add_action('after_setup_theme', 'menuku');
+
 
 ?>
